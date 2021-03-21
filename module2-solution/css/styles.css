@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 10px;
+}
+
+.sections {
+    height: 150px;
+    position: relative;
+    background-color: rgb(194, 181, 181);
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.tag {
+    width: 85px;
+    text-align: center;
+    position: absolute;
+    font-size: 18px;
+    top: -1px;
+    right: 0px;
+    border: 1px solid black;
+}
+
+.chicken-tag {
+    background-color: crimson;
+}
+
+.beef-tag {
+    background-color: yellowgreen;
+}
+
+.sushi-tag {
+    background-color: bisque
+}
+
+.text {
+    position: absolute;
+    top: 30px;
+    font-size: 16px;
+}
+
+/**Media queries for desktop view**/
+
+@media (min-width:992px) {
+    .chicken-section {
+        float: left;
+        width: 33.33%;
+    }
+    .beef-section {
+        float: left;
+        width: 33.33%;
+        margin-left: 20px;
+    }
+    .sushi-section {
+        float: right;
+        width: 30%;
+    }
+}
+
+/**Media queries for tablet view **/
+
+@media(min-width:768px) and (max-width:991px) {
+    .chicken-section {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 48.58%;
+    }
+    .beef-section {
+        width: 48.55%;
+        float: left;
+    }
+    .sushi-section {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/** Media queries for mobile view**/
+
+@media (max-width:767px) {
+    .chicken-section {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .beef-section {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .sushi-section {
+        width: 100%;
+    }
+}
+
+nav {
+    margin: 40px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
